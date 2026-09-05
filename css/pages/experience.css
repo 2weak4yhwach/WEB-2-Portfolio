@@ -1,0 +1,50 @@
+/* ==========================================================================
+   PAGE: EXPERIENCE & CAREER TIMELINE
+   ========================================================================== */
+
+.timeline-list {
+  list-style: none;
+  position: relative;
+  padding-left: 20px;
+  border-left: 1px dashed var(--border-muted);
+  margin-left: 8px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.timeline-item::before {
+  content: "♦";
+  position: absolute;
+  left: -27px;
+  top: 0;
+  color: var(--accent-amber);
+  font-size: 0.85rem;
+  background-color: var(--bg-canvas);
+}
+
+.timeline-date {
+  font-size: 0.78rem;
+  color: var(--accent-teal);
+  letter-spacing: 0.05em;
+  margin-bottom: 2px;
+}
+
+.timeline-role {
+  font-size: 0.98rem;
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+.timeline-org {
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.timeline-content {
+  font-size: 0.86rem;
+  color: var(--text-primary);
+}

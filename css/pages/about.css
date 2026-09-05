@@ -1,0 +1,26 @@
+/* ==========================================================================
+   PAGE: ABOUT & SPECS
+   ========================================================================== */
+
+.operator-dossier {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.spec-category-badge {
+  color: var(--accent-teal);
+  font-size: 0.76rem;
+  letter-spacing: 0.05em;
+}
+
+.manifesto-list {
+  margin-left: 20px;
+  font-size: 0.88rem;
+  color: var(--text-primary);
+  line-height: 1.8;
+}
+
+.manifesto-list li {
+  margin-bottom: 8px;
+}

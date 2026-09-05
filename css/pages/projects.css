@@ -1,0 +1,57 @@
+/* ==========================================================================
+   PAGE: PROJECTS & REPOSITORY ARCHIVE
+   ========================================================================== */
+
+.project-card {
+  background-color: var(--bg-surface);
+  border: 1px solid;
+  border-color: var(--bevel-light) var(--bevel-dark) var(--bevel-dark) var(--bevel-light);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card-header {
+  border-bottom: 1px dashed var(--border-subtle);
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.project-title {
+  font-size: 1rem;
+  color: var(--accent-amber);
+  font-weight: bold;
+}
+
+.project-year {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+
+.project-desc {
+  font-size: 0.86rem;
+  color: var(--text-primary);
+  margin-bottom: 14px;
+}
+
+.project-meta-list {
+  list-style: none;
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  margin-bottom: 14px;
+  background-color: var(--bg-inset);
+  padding: 8px 10px;
+  border: 1px solid var(--border-subtle);
+}
+
+.project-meta-list li {
+  margin-bottom: 4px;
+}
+
+.project-meta-list li:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,22 @@
+/* ==========================================================================
+   PAGE: CONTACT & DIRECTORY
+   ========================================================================== */
+
+.pgp-box {
+  background-color: var(--bg-inset);
+  border: 1px solid var(--border-subtle);
+  padding: 12px;
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  overflow-x: auto;
+  line-height: 1.4;
+  white-space: pre;
+}
+
+.webring-list {
+  list-style: square;
+  margin-left: 18px;
+  font-size: 0.85rem;
+  line-height: 1.8;
+}

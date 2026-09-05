@@ -1,0 +1,204 @@
+/* ==========================================================================
+   REUSABLE COMPONENTS & UTILITIES (Web 1.0 Style)
+   ========================================================================== */
+
+/* Panel / Beveled Content Boxes */
+.panel-box {
+  background-color: var(--bg-surface);
+  border: 1px solid;
+  border-color: var(--bevel-light) var(--bevel-dark) var(--bevel-dark) var(--bevel-light);
+  padding: 16px 20px;
+}
+
+.panel-inset {
+  background-color: var(--bg-inset);
+  border: 1px solid;
+  border-color: var(--bevel-dark) var(--bevel-light) var(--bevel-light) var(--bevel-dark);
+  padding: 14px 18px;
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 8px;
+  margin-bottom: 14px;
+}
+
+.panel-title {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.panel-title::before {
+  content: "■";
+  color: var(--accent-amber);
+  font-size: 0.75rem;
+}
+
+.panel-meta {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  letter-spacing: 0.05em;
+}
+
+/* Typography styles inside content */
+h2, h3, h4 {
+  font-family: var(--font-mono);
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-size: 1.15rem;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 4px;
+  margin-top: 8px;
+}
+
+h3 {
+  font-size: 0.95rem;
+  color: var(--accent-amber);
+}
+
+p {
+  margin-bottom: 12px;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+}
+
+p.lead {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  line-height: 1.7;
+}
+
+.text-muted {
+  color: var(--text-secondary);
+}
+
+.text-dim {
+  color: var(--text-dim);
+}
+
+.text-accent-amber {
+  color: var(--accent-amber);
+}
+
+.text-accent-teal {
+  color: var(--accent-teal);
+}
+
+.text-accent-sage {
+  color: var(--accent-sage);
+}
+
+.text-accent-rust {
+  color: var(--accent-rust);
+}
+
+/* Retro Quotes / Marquee / Callouts */
+.retro-callout {
+  background-color: var(--bg-inset);
+  border-left: 3px solid var(--accent-amber);
+  padding: 10px 14px;
+  margin: 12px 0;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.retro-callout cite {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  font-style: normal;
+}
+
+/* Retro Notice Banner */
+.retro-notice {
+  background-color: #1a1712;
+  border: 1px solid var(--accent-amber-dim);
+  padding: 10px 14px;
+  font-size: 0.82rem;
+  color: var(--accent-amber);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+/* Classic HTML Tables (Web 1.0 style) */
+.table-responsive {
+  overflow-x: auto;
+  margin: 12px 0;
+}
+
+table.retro-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+}
+
+table.retro-table th {
+  background-color: var(--bg-panel);
+  color: var(--text-primary);
+  text-align: left;
+  padding: 8px 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid;
+  border-color: var(--bevel-dark);
+  font-size: 0.8rem;
+}
+
+table.retro-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+}
+
+table.retro-table tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.015);
+}
+
+table.retro-table tr:hover {
+  background-color: rgba(200, 155, 104, 0.05);
+}
+
+/* Tag Pill Badges */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.tag {
+  font-size: 0.72rem;
+  padding: 2px 6px;
+  background-color: var(--bg-panel);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+}
+
+/* Common Grid Utilities */
+.grid-2col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 18px;
+}
+
+@media (max-width: 768px) {
+  .grid-2col {
+    grid-template-columns: 1fr;
+  }
+}
