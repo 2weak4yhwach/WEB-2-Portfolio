@@ -1,8 +1,4 @@
-/* ==========================================================================
-   REUSABLE COMPONENTS & UTILITIES (Web 1.0 Style)
-   ========================================================================== */
 
-/* Panel / Beveled Content Boxes */
 .panel-box {
   background-color: var(--bg-surface);
   border: 1px solid;
@@ -48,7 +44,6 @@
   letter-spacing: 0.05em;
 }
 
-/* Typography styles inside content */
 h2, h3, h4 {
   font-family: var(--font-mono);
   color: var(--text-primary);
@@ -103,7 +98,7 @@ p.lead {
   color: var(--accent-rust);
 }
 
-/* Retro Quotes / Marquee / Callouts */
+
 .retro-callout {
   background-color: var(--bg-inset);
   border-left: 3px solid var(--accent-amber);
@@ -134,7 +129,7 @@ p.lead {
   margin-bottom: 16px;
 }
 
-/* Classic HTML Tables (Web 1.0 style) */
+
 .table-responsive {
   overflow-x: auto;
   margin: 12px 0;
@@ -174,7 +169,7 @@ table.retro-table tr:hover {
   background-color: rgba(200, 155, 104, 0.05);
 }
 
-/* Tag Pill Badges */
+
 .tag-list {
   display: flex;
   flex-wrap: wrap;
@@ -190,7 +185,7 @@ table.retro-table tr:hover {
   color: var(--text-secondary);
 }
 
-/* Common Grid Utilities */
+
 .grid-2col {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));

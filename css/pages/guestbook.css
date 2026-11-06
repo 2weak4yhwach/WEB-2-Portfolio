@@ -1,7 +1,3 @@
-/* ==========================================================================
-   PAGE: GUESTBOOK (Archived Correspondence Stream)
-   ========================================================================== */
-
 .guestbook-stream {
   display: flex;
   flex-direction: column;

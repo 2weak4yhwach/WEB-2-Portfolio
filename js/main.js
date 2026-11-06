@@ -1,7 +1,4 @@
-/**
- * Web 1.0 Subtle Cinematic Engine
- * Pure Vanilla JavaScript - Read-only architecture, no jQuery, no external dependencies
- */
+
 
 document.addEventListener('DOMContentLoaded', () => {
   initClock();
@@ -10,9 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   highlightActiveNav();
 });
 
-/**
- * Live Digital System Clock
- */
+
 function initClock() {
   const clockEl = document.getElementById('system-clock');
   if (!clockEl) return;
@@ -33,10 +28,7 @@ function initClock() {
   setInterval(update, 1000);
 }
 
-/**
- * Simulated Web 1.0 Hit Counter
- * Increments subtly per visit in localStorage
- */
+
 function initHitCounter() {
   const counterEl = document.getElementById('hit-counter');
   if (!counterEl) return;
@@ -52,14 +44,12 @@ function initHitCounter() {
 
   localStorage.setItem('rasman_web_hits', storedHits);
 
-  // Format as 6-digit odometer string e.g. 004821
+
   const formatted = String(storedHits).padStart(6, '0');
   counterEl.textContent = formatted;
 }
 
-/**
- * Scanline Overlay Toggle
- */
+
 function initScanlineToggle() {
   const toggleBtn = document.getElementById('toggle-scanlines');
   const isEnabled = localStorage.getItem('rasman_scanlines') === 'true';
@@ -81,10 +71,7 @@ function initScanlineToggle() {
   }
 }
 
-/**
- * Current Page Nav Highlighter
- * Supports both root /index.html and directory routes e.g. /about/, /projects/
- */
+
 function highlightActiveNav() {
   const currentPath = window.location.pathname;
   const navLinks = document.querySelectorAll('.nav-link');
@@ -93,7 +80,7 @@ function highlightActiveNav() {
     const href = link.getAttribute('href');
     if (!href) return;
 
-    // Check match for root
+   
     const isRoot = (currentPath.endsWith('/') || currentPath.endsWith('index.html')) && 
                    !currentPath.includes('/about/') && 
                    !currentPath.includes('/projects/') && 

@@ -1,9 +1,6 @@
-/* ==========================================================================
-   BASE & THEME DESIGN SYSTEM (Web 1.0 Subtle Cinematic)
-   ========================================================================== */
 
 :root {
-  /* Cinematic Muted Palette */
+ 
   --bg-deep: #0f1115;
   --bg-canvas: #14171d;
   --bg-surface: #1a1e26;
@@ -11,34 +8,33 @@
   --bg-inset: #0c0e12;
   --bg-highlight: #282f3d;
 
-  /* Subtle Bevel Borders (3D Inset / Outset Web 1.0 aesthetic) */
+
   --bevel-light: #363e4f;
   --bevel-dark: #090a0d;
   --border-subtle: #272e3b;
   --border-muted: #3a4354;
 
-  /* Typography & Accents */
-  --text-primary: #d6d2c4;      /* Warm bone ivory */
-  --text-secondary: #8e96a4;    /* Muted slate gray */
-  --text-dim: #5a6270;          /* Dim charcoal text */
-  --accent-amber: #c89b68;      /* Tungsten amber */
+  --text-primary: #d6d2c4;      
+  --text-secondary: #8e96a4;    
+  --text-dim: #5a6270;        
+  --accent-amber: #c89b68;      
   --accent-amber-dim: #7d5e3c;
-  --accent-teal: #688e93;       /* Muted cinematic cyan/teal */
-  --accent-sage: #779277;       /* Muted phosphor olive */
-  --accent-rust: #a86b62;       /* Cinematic warm rust */
+  --accent-teal: #688e93;      
+  --accent-sage: #779277;       
+  --accent-rust: #a86b62;     
 
-  /* Typography Stacks */
+  
   --font-mono: "Courier New", Courier, "Lucida Console", "Liberation Mono", monospace;
   --font-serif: "Georgia", "Times New Roman", Times, serif;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
-  /* Sizing & Spacing */
+  
   --max-width: 920px;
   --site-padding: 16px;
   --radius-none: 0px;
 }
 
-/* Base Reset */
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -70,7 +66,6 @@ body {
   background-position: 0 0, -1px -1px, -1px -1px;
 }
 
-/* Optional Scanline Effect */
 body.scanlines::after {
   content: " ";
   display: block;
@@ -83,7 +78,7 @@ body.scanlines::after {
   opacity: 0.6;
 }
 
-/* Links */
+
 a {
   color: var(--accent-amber);
   text-decoration: underline;
@@ -97,7 +92,7 @@ a:hover {
   text-decoration: none;
 }
 
-/* Main Container Frame */
+
 .desktop-wrapper {
   width: 100%;
   max-width: var(--max-width);
@@ -109,7 +104,6 @@ a:hover {
   flex-direction: column;
 }
 
-/* Classic Window Titlebar */
 .window-titlebar {
   background: linear-gradient(90deg, #252c38 0%, #1a1e27 100%);
   padding: 6px 10px;
@@ -156,7 +150,7 @@ a:hover {
   cursor: default;
 }
 
-/* Header & Banner Area */
+
 .site-header {
   padding: 20px 24px 16px;
   background-color: var(--bg-surface);
@@ -199,7 +193,7 @@ a:hover {
   letter-spacing: 0.06em;
 }
 
-/* Navigation Bar */
+
 .nav-container {
   margin-top: 4px;
   background-color: var(--bg-inset);
@@ -258,7 +252,7 @@ a:hover {
   color: var(--accent-amber-dim);
 }
 
-/* Breadcrumb / Sub-bar */
+
 .breadcrumb-bar {
   background-color: var(--bg-canvas);
   padding: 6px 20px;
@@ -286,7 +280,7 @@ a:hover {
   letter-spacing: 0.05em;
 }
 
-/* Main Content Wrapper */
+
 .main-content {
   padding: 24px;
   background-color: var(--bg-canvas);
@@ -295,7 +289,7 @@ a:hover {
   gap: 24px;
 }
 
-/* Retro Status Bar (Footer) */
+
 .site-footer {
   margin-top: auto;
   background-color: var(--bg-surface);
@@ -366,7 +360,7 @@ a:hover {
   background-color: var(--bg-surface);
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
   body {
     padding: 8px var(--site-padding) 20px;
